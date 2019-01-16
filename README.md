@@ -9,17 +9,10 @@ You will do this homework by editing the _README.md_ file. It's in
 and will be rendered to beautiful HTML when you visit your GitHub repo.
 
 ## Student Information
-Please also edit _README.md_ and replace your instructor's name and NetID with your own:
 
 _Student name_: Weixi Zhu
 
 _Student NetID_: wz28
-
-Your NetID is typically your initials and a numeric digit. That's
-what we need here.
-
-_If you contacted us in advance and we approved a late submission,
-please cut-and-paste the text from that email here._
 
 ## Problem 1
 - Scenario: {Stadium}
