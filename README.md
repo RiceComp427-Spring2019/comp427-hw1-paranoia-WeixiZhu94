@@ -48,7 +48,7 @@ please cut-and-paste the text from that email here._
   - Referees may get biased and cater to one team in the game, which makes the
     game unfair.
 - Countermeasures:
-  - The stadium offer uranium test against drugs to avoid threat #1. This
+  - The stadium offers uranium test against drugs to avoid threat #1. This
     should be cheap and only requires hiring doctors with expertise.
   - The stadium can offer both food and drinks free from drugs. Additionally,
     people can still put drugs into open food or water bottles. In response,
@@ -67,30 +67,58 @@ please cut-and-paste the text from that email here._
     effectively prevent people doing that.
 
 ## Problem 2
-- Scenario: {Stadium|TSA|Documents|Grading|G20}
+- Scenario: {Grading}
 - Assumptions:
-  - explain_your_assumptions
+  - Some students are willing to take the risk of violating honor code.
 - Assets:
-  - explanatory_paragraph
-  - explanatory_paragraph ...
+  - The data integrity of submitted homework. Submitted homework must not be
+    further modified. If the author wants to modify it, it is passing the
+    submission deadline. If other people maliciously modify it, the data
+    integrity is broken.
+  - The confidentiality of submitted homework. If early submitted homework was
+    seen by other people, they can borrow the idea of it and apply to their
+    homework.
 - Threats:
-  - explanatory_paragraph 
-  - explanatory_paragraph ...
+  - People can watch whatever homework was submitted on the network. Based on
+    early submitted homework, they can steal the ideas or solutions from
+    others.
+  - People can intercept the homework being submitted on the network and
+    submit another modified version instead. Therefore, they can make other
+    people's submission worse and make their scores relatively higher.
 - Countermeasures:
-  - explanatory_paragraph
-  - explanatory_paragraph ...
+  - The data integrity can be protected by calculating a hash value of the
+    submitted file. The student must submit their homework along with the
+    computed hash code, by SHA256 algorithm for example. This is easy and
+    there are existing tools to compute it. The grader then computes the hash
+    value again and compare with the submitted work, if they do not equal then
+    ask the students to submit again. Otherwise, send a confirmation email to
+    the students.
+  - The data confidentiality can be protected by encrypted submission channel
+    on the network. Students must submit their homework by ssh where the
+    communications via the network is encrypted. This is also cheap and they
+    just need to learn via Google.
 
 ## Problem 3
-- Scenario: Your choice (give a brief explanation)
+- Scenario: I am overseeing the server for an online video game.
 - Assumptions:
-  - explain_your_assumptions
+  - People always want to cheat the game without paying money or time.
 - Assets:
-  - explanatory_paragraph
-  - explanatory_paragraph ...
+  - The value of the virtual concurrency of the game.
+  - The fairness of the game, when there are players vs. players or teams
+    fighting for the first kill of some game bosses.
 - Threats:
-  - explanatory_paragraph 
-  - explanatory_paragraph ...
+  - People can hack the game and when they attack the monsters, the hacked
+    game client would falsely send messages that their damage is high enough
+    to kill the monsters. So that the data integrity is broken.
+  - People can further exploit some vulnerability of the game and replicate
+    the game concurrencies to make money. However, this will quickly
+    depreciate other players' belongings and ruin the game.
 - Countermeasures:
-  - explanatory_paragraph
-  - explanatory_paragraph ...
+  - Keep updating the game and fixing the vulnerabilities. At the same time,
+    monitor the game market and the fluctuations of the values of game
+    concurrencies. Always be ready to recover the game to some checkpoint if
+    some disasters are happening. The updating and monitoring things could be
+    cheap. The developers are hired for updating the game and making tools to
+    help monitor. Recover the game back to older checkpoints could hurt the
+    market and cost a lot, because players would be mad and quit the game.
 
